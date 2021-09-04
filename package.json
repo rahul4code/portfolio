@@ -1,15 +1,13 @@
 {
-  "homepage": "http://rahul4code.github.io/portfolio",
   "name": "rahul_portfolio",
   "private": true,
   "description": "the most beautiful gatsby template ever designed using antd",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev" : "gatsby develop -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

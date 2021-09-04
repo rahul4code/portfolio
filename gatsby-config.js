@@ -8,7 +8,6 @@ const config = require('./config');
 const plugins = require('./gatsby-config.plugins');
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
     // Data used by some gatsby plugins
     siteUrl: config.siteUrl,
@@ -16,4 +15,5 @@ module.exports = {
     description: config.siteDescription,
   },
   plugins,
+  pathPrefix: "/portfolio"
 };
