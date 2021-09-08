@@ -6,14 +6,11 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `
-  Hey ! My name is Rahul Gupta. I'm a <b>MERN-Stack</b> developer, passionate about various web technologies and dev operations.
-   I like to experiment with different services and tools. I am Having <b>3 years</b> of professional experience in application development
-    and working with JS libraries, Responsible to build scalable applications, elating to explore and learn more 
-    corners of apps by integrating components, tools and services.`,
-  paraTwo: `I work mostly with JS framework and libraries, like ReactJS and NodeJS. I also have hands-on experience on cloud services on 
-  platforms like <b>AWS</b>, <b>Azure</b> and <b>OpenShift</b>. Always excited to meet the requirements. Familiar with Docker, DENODO, Jenkins and more.
-   Finally a learner and a self taught programmer.`,
+  paraOne: `Hey ! My name is Rahul Gupta. I'm a <b>MERN-Stack</b> developer, passionate about various web technologies and dev operations. I like to experiment with different tools and services. I am having <b>3 years</b> of professional experience in application development and to deal with JS libraries, responsible to build scalable applications, 
+  elating to explore and learn more corners of apps by integrating components, tools and services.`,
+  paraTwo: `I work mostly with JS framework and libraries, like ReactJS, NodeJS, KnexJS and more. I also have hands-on experience in cloud services on 
+  platforms like <b>AWS</b>, <b>Azure</b> and <b>OpenShift</b>. Always excited to meet the requirements. Familiar with Docker, DENODO, Jenkins and JIRA tools.
+  Finally a learner and a self taught programmer.`,
 };
 
 const AboutMe = () => {
@@ -28,8 +25,7 @@ const AboutMe = () => {
           keywords={['Rahul', 'MERN', 'AWS', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
         />
         {/* <h1 className="titleSeparate">About Me</h1> */}
-        <p
-           dangerouslySetInnerHTML={domHtml(pageText.paraOne)} />
+        <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)} />
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
       <Row gutter={[20, 20]}>
