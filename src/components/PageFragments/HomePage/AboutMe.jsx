@@ -6,7 +6,7 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hey ! My name is Rahul Gupta. I'm a <b>MERN-Stack</b> developer, passionate about various web technologies and dev operations. I like to experiment with different tools and services. I am having <b>3 years</b> of professional experience in application development and to deal with JS libraries, responsible to build scalable applications, 
+  paraOne: `Hey ! My name is Rahul Gupta. I'm a <b>Full-Stack</b> developer, passionate about various web technologies and dev operations. I like to experiment with different tools and services. I am having <b>3 years</b> of professional experience in application development and to deal with JS libraries, responsible to build scalable applications, 
   elating to explore and learn more corners of apps by integrating components, tools and services.`,
   paraTwo: `I work mostly with JS framework and libraries, like ReactJS, NodeJS, KnexJS and more. I also have hands-on experience in cloud services on 
   platforms like <b>AWS</b>, <b>Azure</b> and <b>OpenShift</b>. Always excited to meet the requirements. Familiar with Docker, DENODO, Jenkins and JIRA tools.
