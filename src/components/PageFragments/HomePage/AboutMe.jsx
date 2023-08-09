@@ -6,17 +6,10 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `
-  Hello !! My name is Rahul Gupta. I'm a full stack web developer who is
-    passionate about various web technologies and devops operations. I like to experiment with different web
-    technologies. I have an experience of 3 years working with MERN and
-    and JS tech, where I am responsible in building scalable and maintainable
-    applications also Elating to explore and learn more corners of Apps by integrating components and
-    services. `,
-  paraTwo: `Currently I work mostly with Javascript technologies like <b>ReactJS</b> and <b>NodeJS</b>. I also
-    have hands on experience working with cloud infrastructures like <b>AWS,Azure and OpenShift</b> and have deployed applications
-    keeping scalability in mind. Docker, Kubernetes, Jenkins, Contentful are some of the cool
-    tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
+  paraOne: `I'm Rahul Gupta, an adept Full-Stack developer with 5 years of experience in crafting exceptional digital solutions. My expertise revolves around dynamic web technologies and seamless dev operations.
+  With mastery in JS frameworks like ReactJS, NodeJS, and KnexJS, I excel in building scalable applications that seamlessly integrate components, tools, and services. My journey into cloud technology has led me to AWS, Azure, and OpenShift, adding depth to my projects.
+  Equipped with Docker, DENODO, Jenkins, and JIRA, I orchestrate development lifecycles with finesse. As a self-taught programmer, I thrive on continuous learning and innovation.`,
+  paraTwo: 'Welcome to my portfolio, a testament to my commitment, innovation, and passion for transforming ideas into functional realities. Let\'s collaborate to create digital experiences that brilliantly unite creativity and functionality.',
 };
 
 const AboutMe = () => {
@@ -28,12 +21,10 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={['Rahul', 'MERN', 'AWS', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
         />
         {/* <h1 className="titleSeparate">About Me</h1> */}
-        <p>
-          {pageText.paraOne}
-        </p>
+        <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)} />
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
       <Row gutter={[20, 20]}>
@@ -64,10 +55,10 @@ const AboutMe = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="guitar.png"
-            alt="guitar.png"
-            textH4="Love Playing Guitar"
-            textH3="Can sing"
+            img="experience.png"
+            alt="experience.png"
+            textH4="Professional Experience"
+            textH3="3 Years"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
