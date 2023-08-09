@@ -6,11 +6,10 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hey ! My name is Rahul Gupta. I'm a <b>Full-Stack</b> developer, passionate about various web technologies and dev operations. I like to experiment with different tools and services. I am having <b>3 years</b> of professional experience in application development and to deal with JS libraries, responsible to build scalable applications, 
-  elating to explore and learn more corners of apps by integrating components, tools and services.`,
-  paraTwo: `I work mostly with JS framework and libraries, like ReactJS, NodeJS, KnexJS and more. I also have hands-on experience in cloud services on 
-  platforms like <b>AWS</b>, <b>Azure</b> and <b>OpenShift</b>. Always excited to meet the requirements. Familiar with Docker, DENODO, Jenkins and JIRA tools.
-  Finally a learner and a self taught programmer.`,
+  paraOne: `I'm Rahul Gupta, an adept Full-Stack developer with 5 years of experience in crafting exceptional digital solutions. My expertise revolves around dynamic web technologies and seamless dev operations.
+  With mastery in JS frameworks like ReactJS, NodeJS, and KnexJS, I excel in building scalable applications that seamlessly integrate components, tools, and services. My journey into cloud technology has led me to AWS, Azure, and OpenShift, adding depth to my projects.
+  Equipped with Docker, DENODO, Jenkins, and JIRA, I orchestrate development lifecycles with finesse. As a self-taught programmer, I thrive on continuous learning and innovation.`,
+  paraTwo: 'Welcome to my portfolio, a testament to my commitment, innovation, and passion for transforming ideas into functional realities. Let\'s collaborate to create digital experiences that brilliantly unite creativity and functionality.',
 };
 
 const AboutMe = () => {
