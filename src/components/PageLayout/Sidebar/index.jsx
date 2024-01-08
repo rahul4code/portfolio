@@ -78,11 +78,10 @@ const Sidebar = (props) => {
     );
   }
   if (width < 768) {
-    if(pathname==='/portfolio/contact')
-    {
+    if (pathname === '/portfolio/contact') {
       domContent = <></>;
     }
-    
+
     if (pathname === '/') {
       domContent = <DomContent />;
     }

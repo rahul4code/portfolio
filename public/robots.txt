@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://rahul4code.github.io/portfolio/sitemap/sitemap-index.xml
-Host: https://rahul4code.github.io
