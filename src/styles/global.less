@@ -1,6 +1,7 @@
 @import (reference) './mixins.less';
 body{
   font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #44566C;
@@ -68,6 +69,12 @@ ul{
         width: 1rem;
       }
 }
+
+.titleSeparate ~ p {
+  // font-family: cursive;
+  font-size: 17px
+}
+
 .centerAlign{
     .flex-center();
 }
@@ -135,11 +142,11 @@ ul{
 }
 .ant-layout > .ant-layout
 {
-  background: #82ccdd !important;
+  background: black;
 }
 
 .outerPadding
 {
-  background: #82ccdd !important;
+  background: black;
   padding-bottom: 20px;
 }

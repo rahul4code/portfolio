@@ -39,7 +39,7 @@ const DomContent = () => (
             <FeatherIcon size="19" icon="calendar" />
             {' '}
           </span>
-&nbsp; &nbsp; Feb 22,1998
+&nbsp; &nbsp; Born in 98
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="map-pin" /></span>
@@ -59,7 +59,7 @@ const DomContent = () => (
         </li>
       </ul>
       <div className={style.resumeDownload}>
-        <a href="Rahul_Resume.pdf" download target="_blank">Download Resume</a>
+        <a href="Rahul's Resume (FullStack).pdf" download target="_blank">Download Resume</a>
       </div>
     </div>
   </aside>

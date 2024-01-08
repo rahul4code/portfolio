@@ -11,7 +11,7 @@ import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import TagCard from '../../components/TagCard';
 import Config from '../../../config';
 
-const Tags = ({ data }) => {
+const Projects = ({ data }) => {
   const { allFile: { edges } } = data;
   const rawTags = data.allMarkdownRemark.edges
     .map((edge) => edge.node.frontmatter.tags)
@@ -26,15 +26,14 @@ const Tags = ({ data }) => {
       <Layout className="container">
         <Header />
         <SEO
-          title="Tags"
-          description="This page consists of various Tags on various technologies that I'll be using
-          to write blogs. You can check the blogs related to the tags by clicking on any of the tags below."
-          path="tags"
+          title="Projects"
+          description="This page consists projects made by Rahul"
+          path="projects"
         />
         <SidebarWrapper>
           <>
             <div className="marginTopTitle">
-              <h1 className="titleSeparate">#Tags</h1>
+              <h1 className="titleSeparate">Projects</h1>
             </div>
             <Row gutter={[30, 20]}>
               {
@@ -57,7 +56,7 @@ const Tags = ({ data }) => {
   );
 };
 
-Tags.propTypes = {
+Projects.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
@@ -111,4 +110,4 @@ export const query = graphql`
   }
 `;
 
-export default Tags;
+export default Projects;
