@@ -32,7 +32,6 @@ jobs:
         run: |
           git config --local user.email "rahul.9info@gmail.com"
           git config --local user.name "rahul4code"
-          git branch -D gh-pages || true
           git checkout -b gh-pages
           git add -f public
           git commit -m "Deploy to GitHub Pages"
