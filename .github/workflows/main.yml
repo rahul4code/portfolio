@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Gatsby site
+        run: gatsby build
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --local user.email "rahul.9info@gmail.com"
+          git config --local user.name "rahul4code"
+          git branch -D gh-pages || true
+          git checkout -b gh-pages
+          git add -f public
+          git commit -m "Deploy to GitHub Pages"
+          git push -f origin gh-pages
+
+          # Optionally, switch back to main branch
+          git checkout main
+
+          # You can add additional steps or deploy scripts here if needed
